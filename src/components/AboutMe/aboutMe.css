@@ -1,0 +1,30 @@
+.aboutMe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.my-img {
+  width: 420px;
+  height: 450px;
+}
+
+.aboutMe__name {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.aboutMe__description {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(163, 163, 163);
+}
+
+.aboutMe__btns {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}

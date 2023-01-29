@@ -1,0 +1,38 @@
+.button__link {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #333;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.button__link:hover {
+  transform: translateY(-3px);
+}
+
+.button__link:active {
+  transform: scale(0.8);
+}
+
+.btn-light:hover {
+  color: #fff;
+  background: rgb(43 24 235);
+  border-color: rgb(43 24 235);
+}
+
+.btn-primary {
+  color: #fff;
+  background: rgb(43 24 235);
+  border-color: rgb(43 24 235);
+}
+
+.btn-primary:hover {
+  color: #333;
+  background: transparent;
+  border-color: #333;
+}

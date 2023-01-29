@@ -1,8 +1,6 @@
 import React from "react";
 import "./header.css";
 import header__img from "../../assets/images/header__img.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { fa } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -14,17 +12,20 @@ const Header = () => {
           <ul className="header_follow_me_lists">
             <li>
               <a href="https://t.me/Shakhzod_Makhammatov" target="_blank">
-                <i class="fab fa-telegram"></i>
+                <i className="fab fa-telegram"></i>
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/shakhzod_makhammatov" target="_blank">
-                <i class="fab fa-instagram"></i>
+              <a
+                href="https://instagram.com/shakhzod_makhammatov"
+                target="_blank"
+              >
+                <i className="fab fa-instagram"></i>
               </a>
             </li>
             <li>
               <a href="tel:998901929900">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </a>
             </li>
           </ul>
