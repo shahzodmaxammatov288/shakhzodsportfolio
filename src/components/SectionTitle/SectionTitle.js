@@ -5,7 +5,7 @@ const SectionTitle = ({ text, title, location }) => {
   return (
     <div
       className="sectionTitle"
-      style={{ textAlign: title, marginLeft: { location } }}
+      style={{ textAlign: title, marginLeft: location }}
     >
       {text}
     </div>
