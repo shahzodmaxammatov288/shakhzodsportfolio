@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe/AboutMe";
+import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <Services />
       <Portfolio />
+      <Contact />
     </div>
   );
 }

@@ -9,6 +9,7 @@
   letter-spacing: 1.2px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .button__link:hover {

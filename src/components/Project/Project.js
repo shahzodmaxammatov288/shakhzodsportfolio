@@ -1,9 +1,15 @@
 import React from "react";
 import "./project.css";
-import hotel from "../../assets/images/korona-taxi.png";
+
+//! images
+
+import truckDispatching from "../../assets/images/truck-dispatching.png";
+import foodDelivery from "../../assets/images/food-delivery.png";
+import koronaTaxi from "../../assets/images/korona-taxi.png";
+import hotel from "../../assets/images/hotel.png";
+import burgerHouse from "../../assets/images/burger.png";
 
 const Project = ({ title, imgSrc, linkGithub, linkSite }) => {
-  console.log(hotel);
   return (
     <div className="project">
       <img src={imgSrc} alt="" />
