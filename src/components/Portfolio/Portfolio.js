@@ -39,7 +39,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <section className="portfolio">
-      <SectionTitle text="Portfolio" title="right" location="0" />
+      <SectionTitle text="Portfolio" title="left" location="auto" />
       <div className="container portfolio-container">
         {projects.map((project, idx) => {
           return <Project key={idx} {...project} />;

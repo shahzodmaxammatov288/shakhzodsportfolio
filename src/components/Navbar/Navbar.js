@@ -13,6 +13,9 @@ const Navbar = () => {
             <a href="#">Men haqimda</a>
           </li>
           <li>
+            <a href="#">Ko'nikmalar</a>
+          </li>
+          <li>
             <a href="#">Xizmatlar</a>
           </li>
           <li>

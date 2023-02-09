@@ -24,7 +24,7 @@ const services = [
 const Services = () => {
   return (
     <section className="services">
-      <SectionTitle text="Xizmatlar" title="left" location="auto" />
+      <SectionTitle text="Xizmatlar" title="right" location="0" />
       <div className="container services-container">
         {services.map((service, idx) => {
           return (
