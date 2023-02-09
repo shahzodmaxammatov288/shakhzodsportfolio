@@ -3,8 +3,8 @@ import "./form.css";
 
 const Form = () => {
   const [data, setData] = useState([]);
-  const inputNameRef = useRef(null);
-  const inputPhoneNumberRef = useRef(null);
+  const inputNameRef = useRef("salom");
+  const inputPhoneNumberRef = useRef(+998);
   const messageRef = useRef("");
 
   const handelValue = (e) => {
@@ -40,6 +40,7 @@ const Form = () => {
             ref={inputNameRef}
             value={inputNameRef.value}
             onChange={handelValue}
+            autoComplete="off"
             required
           />
         </div>
@@ -48,12 +49,14 @@ const Form = () => {
             Telefon raqamingiz:
           </label>
           <input
-            type="number"
+            type="tel"
             id="phoneNumber"
             name="phoneNumber"
             ref={inputPhoneNumberRef}
+            defaultValue="+998"
             value={inputPhoneNumberRef.value}
             onChange={handelValue}
+            autoComplete="off"
             required
           />
         </div>
@@ -69,6 +72,7 @@ const Form = () => {
             style={{ resize: "none" }}
             ref={messageRef}
             value={messageRef.value}
+            autoComplete="off"
             onChange={handelValue}
           ></textarea>
         </div>
