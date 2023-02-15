@@ -1,5 +1,6 @@
 .form {
   width: 50%;
+  margin: 0 auto;
 }
 
 .form__title {
@@ -42,4 +43,16 @@
   display: block;
   margin-left: auto;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form {
+    width: 100%;
+  }
 }

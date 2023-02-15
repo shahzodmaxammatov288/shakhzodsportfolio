@@ -30,13 +30,13 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="header__left">
+        <div className="header__left" data-aos="fade-up">
           <h1 className="header__title">
             Shahzod <br /> <span>Maxammatov</span>
           </h1>
           <h4 className="header__job">Web, Front End dasturchi</h4>
         </div>
-        <div className="header__right">
+        <div className="header__right" data-aos="fade-up">
           <img src={header__img} alt="header-image" />
         </div>
       </div>

@@ -1,28 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <nav>
       <div className="container nav__container">
+        <div
+          className={`overlay ${isActive ? "active" : ""}`}
+          onClick={() => setIsActive(!isActive)}
+        ></div>
         <a href="index.html" className="logo">
           Shakhzod's Portfolio
         </a>
-        <ul className="lists">
+        <div
+          className="nav__toggle__btn"
+          onClick={() => setIsActive(!isActive)}
+        >
+          <span>
+            <i className={`fas ${isActive ? "fa-close" : "fa-bars"}`}></i>
+          </span>
+        </div>
+        <ul className={`lists ${isActive ? "active" : ""}`}>
           <li>
-            <a href="#">Men haqimda</a>
+            <a
+              className="nav-link"
+              href="#aboutMe"
+              onClick={() => setIsActive(!isActive)}
+            >
+              Men haqimda
+            </a>
           </li>
           <li>
-            <a href="#">Ko'nikmalar</a>
+            <a
+              className="nav-link"
+              href="#skills"
+              onClick={() => setIsActive(!isActive)}
+            >
+              Ko'nikmalar
+            </a>
           </li>
           <li>
-            <a href="#">Xizmatlar</a>
+            <a
+              className="nav-link"
+              href="#services"
+              onClick={() => setIsActive(!isActive)}
+            >
+              Xizmatlar
+            </a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a
+              className="nav-link"
+              href="#portfolio"
+              onClick={() => setIsActive(!isActive)}
+            >
+              Portfolio
+            </a>
           </li>
           <li>
-            <a href="#">Aloqa</a>
+            <a
+              className="nav-link"
+              href="#contact"
+              onClick={() => setIsActive(!isActive)}
+            >
+              Aloqa
+            </a>
           </li>
         </ul>
       </div>

@@ -3,7 +3,7 @@ import "./service.css";
 
 const Service = ({ id, iconName, title, desc }) => {
   return (
-    <div key={id} className="service">
+    <div key={id} className="service" data-aos="fade-up">
       <div className="service__box__icon">
         <i className={iconName}></i>
       </div>

@@ -7,6 +7,28 @@
   font-size: 2.5rem;
   background-color: rgb(22, 6, 39);
   color: #fff;
-  letter-spacing: 1.2px;
+  letter-spacing: 2px;
   text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+  .sectionTitle {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sectionTitle {
+    width: 75%;
+    font-size: 1.8rem;
+    padding: 1.2rem 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
 }

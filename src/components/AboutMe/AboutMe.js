@@ -6,13 +6,13 @@ import Button from "../Generic/Button/Button";
 
 const AboutMe = () => {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="aboutMe">
       <SectionTitle text="Men haqimda" title="right" marginLeft="0" />
       <div className="container aboutMe-container">
-        <div className="aboutMe__left">
+        <div className="aboutMe__left" data-aos="fade-up">
           <img className="my-img" src={myImg} alt="Mening rasmim" />
         </div>
-        <div className="aboutMe__right">
+        <div className="aboutMe__right" data-aos="fade-up">
           <h2 className="aboutMe__name">
             <em>
               Shahzod <br />

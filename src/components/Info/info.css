@@ -6,16 +6,13 @@
   color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
 }
 
 .info__title {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: capitalize;
-}
-
-.info .info__list {
-  list-style: none;
 }
 
 .info .info__list li {
@@ -32,4 +29,38 @@
 
 .info .info__list .info-link i {
   padding-right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .info {
+    width: 100%;
+    min-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .info .info__list .info-link {
+    font-size: 18px;
+    white-space: unset;
+  }
+
+  .info .info__list .info-link i {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info {
+    width: 100%;
+    min-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .info .info__list .info-link {
+    font-size: 13px;
+    white-space: unset;
+  }
+
+  .info .info__list .info-link i {
+    padding-right: 0.3rem;
+  }
 }

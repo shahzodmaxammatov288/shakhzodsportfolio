@@ -4,10 +4,10 @@ import "./skills.css";
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <section className="skills" id="skills">
       <SectionTitle text="Ko'nikmalar" title="left" location="auto" />
       <div className="container skills-container">
-        <ul className="skills__list">
+        <ul className="skills__list" data-aos="fade-up">
           <li>
             <i className="fab fa-html5"></i> HTML
           </li>
@@ -18,7 +18,7 @@ const Skills = () => {
             <i className="fab fa-sass"></i> SCSS
           </li>
         </ul>
-        <ul className="skills__list">
+        <ul className="skills__list" data-aos="fade-up">
           <li>
             <i className="fab fa-bootstrap"></i> BOOTSTRAP
           </li>
@@ -30,7 +30,7 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

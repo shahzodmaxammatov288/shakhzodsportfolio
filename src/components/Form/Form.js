@@ -26,7 +26,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" data-aos="fade-up">
       <h2 className="form__title">Xabar yuborish:</h2>
       <form action="">
         <div className="form__box">

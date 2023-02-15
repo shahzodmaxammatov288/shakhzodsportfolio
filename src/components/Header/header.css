@@ -5,6 +5,7 @@ header {
   background-color: rgb(22, 6, 39);
   border-top: 1px solid #fff;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  position: relative;
 }
 
 .header-container {
@@ -47,9 +48,8 @@ header {
 }
 
 .header__right img {
-  width: 450px;
-  height: 450px;
-  border-radius: 50px;
+  width: 350px;
+  border-radius: 10px;
 }
 
 .header_follow_me {
@@ -91,4 +91,47 @@ header {
 
 .header_follow_me_lists i:hover {
   transform: scale(1.2) rotate(-90deg);
+}
+
+@media screen and (max-width: 1199px) {
+  .header__title {
+    font-size: 2.8rem;
+  }
+
+  .header__job {
+    margin: 0.5rem 0;
+    font-size: 20px;
+  }
+
+  .header_follow_me {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .header__left {
+    width: 100%;
+  }
+
+  .header__title {
+    font-size: 2.4rem;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .header__job {
+    margin: 0.5rem 0;
+    font-size: 14px;
+  }
+
+  .header_follow_me {
+    display: none;
+  }
 }

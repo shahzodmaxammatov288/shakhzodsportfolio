@@ -2,6 +2,11 @@ nav {
   width: 100%;
   padding: 20px 0;
   background-color: rgb(22, 6, 39);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  transition: all 0.5s linear;
 }
 
 .logo {
@@ -37,4 +42,106 @@ nav {
 .lists a:hover {
   border-color: #fff;
   transform: scale(1);
+}
+
+.nav__toggle__btn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  color: rgb(255, 255, 255);
+  /* border: 1px solid #fff; */
+  border-radius: 3px;
+  z-index: 777;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.nav__toggle__btn i {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lists a {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 6, 39, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .lists {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(22, 6, 39, 0.8);
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+  }
+
+  .lists.active {
+    transform: translateX(0%);
+  }
+
+  .lists a {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .nav__toggle__btn {
+    display: flex;
+  }
+
+  .lists a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0.5rem 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lists {
+    width: 70%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav__toggle__btn i {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 0.8rem;
+  }
+
+  .lists {
+    width: 100%;
+  }
 }

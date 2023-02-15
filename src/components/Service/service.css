@@ -5,7 +5,7 @@
   align-items: center;
   width: 300px;
   height: 300px;
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 1rem;
   padding-top: 50px;
   text-align: center;
@@ -41,4 +41,10 @@
 .service__description {
   font-size: 16px;
   color: rgb(112, 112, 112);
+}
+
+@media screen and (max-width: 576px) {
+  .service {
+    margin: 1rem auto;
+  }
 }

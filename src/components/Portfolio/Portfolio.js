@@ -38,7 +38,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <SectionTitle text="Portfolio" title="left" location="auto" />
       <div className="container portfolio-container">
         {projects.map((project, idx) => {

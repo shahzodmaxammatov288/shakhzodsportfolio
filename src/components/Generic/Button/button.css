@@ -37,3 +37,16 @@
   background: transparent;
   border-color: #333;
 }
+
+@media screen and (max-width: 576px) {
+  .button__link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .button__link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

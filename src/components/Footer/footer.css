@@ -29,3 +29,9 @@
 .footer-link i:hover {
   transform: scale(1.1) rotate(360deg);
 }
+
+@media screen and (max-width: 576px) {
+  .footer__copy {
+    font-size: 12px;
+  }
+}

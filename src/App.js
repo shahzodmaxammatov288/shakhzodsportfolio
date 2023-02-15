@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Services from "./components/Services/Services";
 import Skills from "./components/Skills/Skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   return (
@@ -21,5 +23,7 @@ function App() {
     </div>
   );
 }
+
+AOS.init();
 
 export default App;

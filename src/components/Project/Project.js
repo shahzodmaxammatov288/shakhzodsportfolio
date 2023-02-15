@@ -11,7 +11,7 @@ import burgerHouse from "../../assets/images/burger.png";
 
 const Project = ({ title, imgSrc, linkGithub, linkSite }) => {
   return (
-    <div className="project">
+    <div className="project" data-aos="fade-up">
       <img src={imgSrc} alt="" />
       <div className="project__box">
         <h2 className="project__title">{title}</h2>
