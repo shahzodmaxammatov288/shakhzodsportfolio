@@ -1,0 +1,45 @@
+.form {
+  width: 50%;
+}
+
+.form__title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form__label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.5rem;
+}
+
+.form__box input,
+.form__box textarea {
+  padding: 0.7rem 1rem;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.form__box input:focus,
+.form__box textarea:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form button {
+  display: block;
+  margin-left: auto;
+  margin-top: 2rem;
+}

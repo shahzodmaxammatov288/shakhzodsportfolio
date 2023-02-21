@@ -6,13 +6,6 @@ header {
   border-top: 1px solid #fff;
 }
 
-.container {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 130px;
-}
-
 .header-container {
   display: flex;
   height: 100%;
@@ -55,15 +48,7 @@ header {
 .header__right img {
   width: 450px;
   height: 450px;
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
+  border-radius: 50px;
 }
 
 .header_follow_me {

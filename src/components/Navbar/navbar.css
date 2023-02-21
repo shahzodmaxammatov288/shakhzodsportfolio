@@ -4,13 +4,6 @@ nav {
   background-color: rgb(22, 6, 39);
 }
 
-.container {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 130px;
-}
-
 .logo {
   letter-spacing: 1.2px;
   color: rgba(255, 255, 255, 0.836);
